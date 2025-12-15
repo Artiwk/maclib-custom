@@ -259,6 +259,8 @@ function MacLib:Window(Settings)
 	uICorner2.CornerRadius = UDim.new(1, 0)
 	uICorner2.Parent = maximize
 
+	maximize.Parent = controls
+
 	local empty = Instance.new("TextButton")
 	empty.Name = "Exit"
 	empty.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json")
@@ -275,7 +277,7 @@ function MacLib:Window(Settings)
 	uICorner3.CornerRadius = UDim.new(1, 0)
 	uICorner3.Parent = empty
 
-	maximize.Parent = controls
+	empty.Parent = controls
 
 	local function applyState(button, enabled)
 		local size = enabled and windowControlSettings.sizes.enabled or windowControlSettings.sizes.disabled
