@@ -220,7 +220,7 @@ function MacLib:Window(Settings)
 	uICorner.Name = "UICorner"
 	uICorner.CornerRadius = UDim.new(1, 0)
 	uICorner.Parent = exit
-        minimize.BackgroundColor3 = Color3.fromRGB(1, 190, 57)
+
 	exit.Parent = controls
 
 	local minimize = Instance.new("TextButton")
