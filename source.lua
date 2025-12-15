@@ -282,7 +282,6 @@ function MacLib:Window(Settings)
 		local transparency = enabled and windowControlSettings.transparencies.enabled or windowControlSettings.transparencies.disabled
 
 		button.Size = size
-		button.BackgroundColor3 = Color3.fromRGB(119, 174, 94)
 		button.BackgroundTransparency = transparency
 		button.Active = enabled
 		button.Interactable = enabled
