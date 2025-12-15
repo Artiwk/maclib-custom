@@ -238,7 +238,6 @@ function MacLib:Window(Settings)
 	local uICorner1 = Instance.new("UICorner")
 	uICorner1.Name = "UICorner"
 	uICorner1.CornerRadius = UDim.new(1, 0)
-        
 	uICorner1.Parent = minimize
 
 	minimize.Parent = controls
@@ -300,7 +299,7 @@ function MacLib:Window(Settings)
 	local divider1 = Instance.new("Frame")
 	divider1.Name = "Divider"
 	divider1.AnchorPoint = Vector2.new(0, 1)
-	divider1.BackgroundColor3 = Color3.fromRGB(252, 190, 57)
+	divider1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	divider1.BackgroundTransparency = 0.9
 	divider1.BorderColor3 = Color3.fromRGB(0, 0, 0)
 	divider1.BorderSizePixel = 0
