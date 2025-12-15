@@ -267,6 +267,7 @@ function MacLib:Window(Settings)
 
 		button.Size = size
 		button.BackgroundColor3 = Color3.fromRGB(119, 174, 94)
+		button.BackgroundTransparency = transparency
 		button.Active = enabled
 		button.Interactable = enabled
 
