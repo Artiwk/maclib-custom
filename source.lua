@@ -259,6 +259,22 @@ function MacLib:Window(Settings)
 	uICorner2.CornerRadius = UDim.new(1, 0)
 	uICorner2.Parent = maximize
 
+	local empty = Instance.new("TextButton")
+	empty.Name = "Exit"
+	empty.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json")
+	empty.Text = ""
+	empty.TextColor3 = Color3.fromRGB(0, 0, 0)
+	empty.TextSize = 14
+	empty.AutoButtonColor = false
+	empty.BackgroundColor3 = Color3.fromRGB(250, 93, 86)
+	empty.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	empty.BorderSizePixel = 0
+
+	local uICorner3 = Instance.new("UICorner")
+	uICorner3.Name = "UICorner"
+	uICorner3.CornerRadius = UDim.new(1, 0)
+	uICorner3.Parent = empty
+
 	maximize.Parent = controls
 
 	local function applyState(button, enabled)
